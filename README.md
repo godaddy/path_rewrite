@@ -1,4 +1,5 @@
-= PathRewrite
+PathRewrite
+===========
 
 Define application route rewrites with a dynamically configured data persistence. This is largely intended as an SEO preservation
 mechanism, so that you can rewrite yoru application paths and have old indexes redirected to the new location automatically.
