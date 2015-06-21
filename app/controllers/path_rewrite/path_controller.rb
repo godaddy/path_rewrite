@@ -11,5 +11,3 @@ module PathRewrite
 
   end
 end
-# FEATURE FLAG (in nemo)
-# TEST/REGRESSION
