@@ -20,4 +20,6 @@ ActiveRecord::Schema.define(version: 20150618003028) do
     t.datetime "updated_at", null: false
   end
 
+  add_index "path_rewrite_path_translations", ["old_path"], name: "index_path_rewrite_path_translations_on_old_path"
+
 end
