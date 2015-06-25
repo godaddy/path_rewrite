@@ -5,10 +5,14 @@ module PathRewrite
       @check_redirect = value
     end
 
-    def check_redirect?
+    def check_redirect?(request=nil)
       return @check_redirect unless @check_redirect.respond_to?(:call)
 
-      @check_redirect.call
+      if @check_redirect.arity == 0
+        @check_redirect.call
+      else
+        @check_redirect.call request
+      end
     end
 
   end
